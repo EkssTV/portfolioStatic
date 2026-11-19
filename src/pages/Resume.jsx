@@ -128,7 +128,7 @@ export default function Resume() {
             
             <div>
               <h1 className="text-4xl font-bold text-slate-900 mb-2">{t('resume.title')}</h1>
-              <p className="text-lg text-brand font-medium">Matthieu — Développeur Front-End</p>
+              <p className="text-lg text-brand font-medium">Matthieu — {t('home.titleMat')}</p>
             </div>
           </div>
           
