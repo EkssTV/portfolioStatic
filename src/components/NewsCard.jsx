@@ -7,8 +7,7 @@ export default function NewsCard({
   tags, 
   imageUrl, 
   imageAlt, 
-  category, 
-  readTime, 
+  category,
   liveUrl, 
   githubUrl 
 }) {
@@ -48,7 +47,6 @@ export default function NewsCard({
         {/* Métadonnées : Date & Temps de lecture */}
         <div className="flex justify-between items-center mb-3 text-xs font-semibold text-slate-400 tracking-wider uppercase">
           <span className="text-brand">{formattedDate}</span>
-          {readTime && <span>⏱ {readTime}</span>}
         </div>
 
         {/* Textes principaux */}
