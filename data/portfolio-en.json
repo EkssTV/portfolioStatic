@@ -32,7 +32,7 @@
     "proofItems": [
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/imageMoi3.jpeg",
+        "url": "/portfolioStatic/preuves/imageMoi3.webp",
         "label": "Me climbing"
       }
     ],
@@ -178,17 +178,17 @@
     "proofItems": [
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moifeu.png",
+        "url": "/portfolioStatic/preuves/moifeu.webp",
         "label": "Me soldering"
       },
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moibipboup.png",
+        "url": "/portfolioStatic/preuves/moibipboup.webp",
         "label": "Example of the candy-sorting robot we built"
       },
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moiyahou.png",
+        "url": "/portfolioStatic/preuves/moiyahou.webp",
         "label": "Me on a frozen sea"
       }
     ],
@@ -226,7 +226,7 @@
     "proofItems": [
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/preuveEmailtutorat.png",
+        "url": "/portfolioStatic/preuves/preuveEmailtutorat.webp",
         "label": "Email from my colleague and me to our tutees"
       }
     ],
