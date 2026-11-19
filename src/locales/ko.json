@@ -14,7 +14,12 @@
     "about_me": "요약",
     "download_cv": "이력서 다운로드",
     "titleMat" :"IT 전공 학생 | 개발·데이터·AI ",
-    "fastResume":"개발, 데이터, AI에 열정을 가진 창의적이고 인간 중심적인 IT 전공 학생입니다."
+    "fastResume":"개발, 데이터, AI에 열정을 가진 창의적이고 인간 중심적인 IT 전공 학생입니다.",
+    "skills_title": "기술 및 아키텍처",
+"languages_title": "언어",
+"lang_fr": "🇫🇷 프랑스어 (C2)",
+"lang_en": "🇬🇧 영어 (B2–C1)",
+"lang_ko": "🇰🇷 한국어 (A2–B1)"
   },
 "carousel": {
     "slide1_title": "디지털 창작에 대한 열정",
