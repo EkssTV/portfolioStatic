@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import imageMoi1 from "../assets/imageMoi1.jpeg";
-import imageMoi2 from "../assets/imageMoi2.jpeg";
-import imageMoi3 from "../assets/imageMoi3.jpeg";
+import imageMoi1 from "../assets/imageMoi1.webp";
+import imageMoi2 from "../assets/imageMoi2.webp";
+import imageMoi3 from "../assets/imageMoi3.webp";
 // Nos données (images, titres). 
 const slides = [
   {

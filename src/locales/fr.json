@@ -14,7 +14,12 @@
     "about_me": "En bref",
     "download_cv": "Télécharger mon CV",
     "titleMat": "Étudiant en informatique | Développement, Réseau,Data & IA ",
-    "fastResume": "Étudiant en IT passionné par le développement, la data et l’IA, avec un esprit créatif et orienté humain. "
+    "fastResume": "Étudiant en IT passionné par le développement, la data et l’IA, avec un esprit créatif et orienté humain. ",
+    "skills_title": "Tech & Architecture",
+    "languages_title": "Langues",
+    "lang_fr": "🇫🇷 Français (C2)",
+    "lang_en": "🇬🇧 Anglais (B2–C1)",
+    "lang_ko": "🇰🇷 Coréen (A2–B1)"
   },
 "carousel": {
     "slide1_title": "Créateur numérique passionné",

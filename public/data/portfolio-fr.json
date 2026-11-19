@@ -30,7 +30,7 @@
     "proofItems": [
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/imageMoi3.jpeg",
+        "url": "/portfolioStatic/preuves/imageMoi3.webp",
         "label": "Moi qui escalade"
       }
     ],
@@ -174,17 +174,17 @@
     "proofItems": [
               {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moifeu.png",
+        "url": "/portfolioStatic/preuves/moifeu.webp",
         "label": "Moi qui soude"
       },
                     {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moibipboup.png",
+        "url": "/portfolioStatic/preuves/moibipboup.webp",
         "label": "Exemple du robot qui range des bonbons qu'on a fait"
       },
                     {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moiyahou.png",
+        "url": "/portfolioStatic/preuves/moiyahou.webp",
         "label": "Moi sur une mer de glace"
       }
     ],
@@ -222,7 +222,7 @@
     "proofItems": [
          {
         "type": "image",
-        "url": "/portfolioStatic/preuves/preuveEmailtutorat.png",
+        "url": "/portfolioStatic/preuves/preuveEmailtutorat.webp",
         "label": "Email de mon collegue et moi pour nos tutorés"
       }
     ],

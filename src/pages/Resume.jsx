@@ -2,29 +2,40 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { fetchResumeData } from '../services/resumeService'
 import monCV from '../assets/cv-matthieu.pdf'
-import maPhoto from '../assets/photo.png'
+import maPhoto from '../assets/photo.webp'
 
-// --- COMPOSANT 1 : La jauge de compétence animée ---
-const SkillBar = ({ name, level, description }) => {
-  const [width, setWidth] = useState(0)
+// --- COMPOSANT 1 : Les segments de compétence animés (1 à 4 crans) ---
+const SkillBar = ({ name, level, levelLabel, description }) => {
+  const [activeSteps, setActiveSteps] = useState(0)
+  const totalSteps = 4
 
   useEffect(() => {
-    const timer = setTimeout(() => setWidth(level), 200)
+    const timer = setTimeout(() => setActiveSteps(level), 200)
     return () => clearTimeout(timer)
   }, [level])
 
   return (
     <div className="mb-5 group">
-      <div className="flex justify-between items-end mb-1">
+      <div className="flex justify-between items-center mb-2 gap-2">
         <span className="font-bold text-slate-800 text-sm">{name}</span>
-        <span className="text-xs text-brand font-medium">{level}%</span>
+        <span className="text-xs text-brand font-semibold bg-brand/10 px-2.5 py-0.5 rounded-full shrink-0">
+          {levelLabel}
+        </span>
       </div>
-      <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden relative">
-        <div 
-          className="bg-brand h-2 rounded-full transition-all duration-1000 ease-out"
-          style={{ width: `${width}%` }}
-        ></div>
+
+      {/* 4 segments de niveau */}
+      <div className="grid grid-cols-4 gap-1.5" aria-hidden="true">
+        {Array.from({ length: totalSteps }).map((_, index) => (
+          <div
+            key={index}
+            style={{ transitionDelay: `${index * 100}ms` }}
+            className={`h-2 rounded-full transition-colors duration-500 ${
+              index < activeSteps ? 'bg-brand' : 'bg-slate-100'
+            }`}
+          />
+        ))}
       </div>
+
       <p className="text-xs text-slate-500 mt-2 line-clamp-1 group-hover:line-clamp-none transition-all">
         {description}
       </p>
@@ -34,7 +45,7 @@ const SkillBar = ({ name, level, description }) => {
 
 // --- COMPOSANT 2 : La carte Timeline (Accordéon) ---
 const TimelineItem = ({ title, organization, period, description, highlights, type }) => {
-  const { t} = useTranslation()
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   
   const isEdu = type === 'edu'
@@ -86,7 +97,7 @@ const TimelineItem = ({ title, organization, period, description, highlights, ty
 
 // --- COMPOSANT PRINCIPAL : La Page Resume ---
 export default function Resume() {
-  const { t,i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [data, setData] = useState(null)
   
   useEffect(() => {
@@ -111,7 +122,6 @@ export default function Resume() {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-8 border-b border-slate-100 pb-8">
           
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-            {/* TA PHOTO */}
             <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-brand-light/20 shrink-0 shadow-inner">
               <img src={maPhoto} alt="Matthieu" className="w-full h-full object-cover" />
             </div>

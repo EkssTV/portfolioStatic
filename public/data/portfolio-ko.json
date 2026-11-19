@@ -32,7 +32,7 @@
     "proofItems": [
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/imageMoi3.jpeg",
+        "url": "/portfolioStatic/preuves/imageMoi3.webp",
         "label": "클라이밍하는 모습"
       }
     ],
@@ -178,17 +178,17 @@
     "proofItems": [
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moifeu.png",
+        "url": "/portfolioStatic/preuves/moifeu.webp",
         "label": "납땜 작업 중인 모습"
       },
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moibipboup.png",
+        "url": "/portfolioStatic/preuves/moibipboup.webp",
         "label": "직접 제작한 사탕 분류 로봇 예시"
       },
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/moiyahou.png",
+        "url": "/portfolioStatic/preuves/moiyahou.webp",
         "label": "얼어붙은 바다 위에서"
       }
     ],
@@ -226,7 +226,7 @@
     "proofItems": [
       {
         "type": "image",
-        "url": "/portfolioStatic/preuves/preuveEmailtutorat.png",
+        "url": "/portfolioStatic/preuves/preuveEmailtutorat.webp",
         "label": "동료와 함께 튜티들에게 보낸 안내 이메일"
       }
     ],

@@ -4,7 +4,7 @@ import HeroCarousel from '../components/HeroCarousel'
 import NewsCard from '../components/NewsCard'
 import { fetchLatestNews } from '../services/newsService'
 
-import maPhoto from '../assets/photo.png'
+import maPhoto from '../assets/photo.webp'
 import monCV from '../assets/cv-matthieu.pdf'
 
 const techBadges = [

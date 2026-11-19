@@ -18,6 +18,8 @@ i18n
   .init({
     resources,
     fallbackLng: 'fr', // Langue par défaut si la détection échoue
+    supportedLngs: ['fr', 'en', 'ko'],
+    load: 'languageOnly',
     interpolation: {
       escapeValue: false // React gère déjà la protection XSS
     }
