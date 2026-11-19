@@ -13,15 +13,21 @@ const resources = {
 };
 
 i18n
-  .use(LanguageDetector) // Détecte la langue du navigateur
-  .use(initReactI18next) // Passe l'instance i18n à React
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'fr', // Langue par défaut si la détection échoue
+    fallbackLng: 'fr',
     supportedLngs: ['fr', 'en', 'ko'],
     load: 'languageOnly',
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
+      // Coupe "en-US" -> "en" AVANT de sauvegarder dans localStorage
+      convertDetectedLanguage: (lng) => lng.split('-')[0].toLowerCase()
+    },
     interpolation: {
-      escapeValue: false // React gère déjà la protection XSS
+      escapeValue: false
     }
   });
 
